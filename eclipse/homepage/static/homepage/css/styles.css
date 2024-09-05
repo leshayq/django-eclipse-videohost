@@ -1,0 +1,186 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    background-color: #1A1A1D;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 0 15px;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #2828288a;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    height: 50px;
+}
+
+.sidebar a {
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #dcdcdcef;
+}
+
+.sidebar a:hover {
+    background-color: #41414165;
+}
+
+.sidebar li:last-child {
+    margin-top: 10px;
+}
+
+.sidebar li:last-child a:hover {
+    background-color: transparent;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-image: url('eclip.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.9s ease;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.logo:hover {
+    background-image: url('eclip-hover.png');
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-button {
+    color: #fff;
+    font-weight: 800;
+    padding: 7px;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.register-button {
+    background-color: #3500D3;
+    margin: 5px;
+}
+
+.register-button:hover {
+    background-color: #3100c4;
+}
+
+.login-button {
+    background-color: #1A1A1D;
+    margin: 5px;
+}
+
+.login-button:hover {
+    background-color: #414141;
+}
+
+.account-actions {
+    float: right;
+    display: flex;
+}
+
+.main-videos {
+    background-color: #1A1A1D;
+}
+
+.videos-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.video-fill {
+    width: 364px;
+    margin-bottom: 10px;
+    height: 196px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.single-video {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.main-title {
+    color: #fff;
+    padding: 10px 10px 10px 0px;
+}
+
+.video-title a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-channel {
+    font-weight: 300;
+    color: #9C9C9C;
+}
+
+.video-views-date {
+    display: flex;
+    font-weight: 300;
+    color: #9C9C9C;
+    justify-content: space-between;
+}

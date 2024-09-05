@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <div class="header-row">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="#">Главная страница</a></li>
+                        <div class='separator'></div>
+                        <li><a href="#">Мой канал</a></li>
+                        <li><a href="#">Плейлисты</a></li>
+                        <li><a href="#">Сохраненное</a></li>
+                        <li><a><div class="logo"></div></a></li>
+                    </ul>
+                    <ul>
+                        <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        <li><div class="logo"></div></li>
+                    </ul>
+                </nav>
+
+                <div class="account-actions">
+                    <div class="auth-button login-button">
+                        <a>Вход</a>
+                    </div>
+                    <div class="auth-button register-button">
+                        <a>Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-videos">
+        <div class="wrapper">
+
+            <div class="main-title">
+                <h1>Специально для вас</h1>
+            </div>
+
+            <div class="videos-list">
+                <div class="single-video">
+                    <div class="video-fill">
+                    </div>
+
+                    <div class="video-title">
+                        <a href="#">Название видео</a>
+                    </div>
+
+                    <div class="video-channel">
+                        <p>@john_forever</p>
+                    </div>
+
+                    <div class="video-views-date">
+                        <div>
+                            <p>100 просмотров</p>
+                        </div>
+                        <div>
+                            <p>2 дня назад</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-video">
+                    <div class="video-fill">
+                    </div>
+
+                    <div class="video-title">
+                        <p>Название видео</p>
+                    </div>
+
+                    <div class="video-channel">
+                        <p>John Forever</p>
+                    </div>
+
+                    <div class="video-views-date">
+                        <div>
+                            <p>100 просмотров</p>
+                        </div>
+                        <div>
+                            <p>2 дня назад</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-video">
+                    <div class="video-fill">
+                    </div>
+
+                    <div class="video-title">
+                        <p>Название видео</p>
+                    </div>
+
+                    <div class="video-channel">
+                        <p>John Forever</p>
+                    </div>
+
+                    <div class="video-views-date">
+                        <div>
+                            <p>100 просмотров</p>
+                        </div>
+                        <div>
+                            <p>2 дня назад</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-video">
+                    <div class="video-fill">
+                    </div>
+
+                    <div class="video-title">
+                        <a href="#">Название видео</a>
+                    </div>
+
+                    <div class="video-channel">
+                        <p>John Forever</p>
+                    </div>
+
+                    <div class="video-views-date">
+                        <div>
+                            <p>100 просмотров</p>
+                        </div>
+                        <div>
+                            <p>2 дня назад</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
